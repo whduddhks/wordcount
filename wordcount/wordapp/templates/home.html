@@ -1,0 +1,41 @@
+<head>
+    <style>
+        .container{
+            margin: 0 30%;
+            background-color:khaki;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        textarea{
+            width: 80%;
+            height: 80%;
+            font-size: 24px;
+        }
+        input{
+            font-size: 24px;
+        }
+        p{
+            margin: 0 30%;
+            background-color: khaki;
+            float: right;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>영완이가 만든 글자 수 세기 프로그램!</h1>
+        <form action="{%url 'count'%}">
+            <textarea cols="100" rows="20" name="fulltext" placeholder="이곳에 검사할 내용을 적으세요"></textarea>
+            <br>
+            <input type="submit" value="검사">
+        </form>
+    </div>
+    <p>
+        더 자세히 알고 싶다면? ---><a href="{%url 'about'%}">ABOUT</a>
+    </p>
+</body>

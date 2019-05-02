@@ -1,0 +1,71 @@
+<head>
+    <style>
+        .whole{
+            margin: 0 30%;
+            background-color:khaki;
+            text-align: center;
+        }
+        p{
+            font-size: 24px;
+        }
+        figure {
+            display: inline-block;
+            background-color: white;
+        }
+        .figure1 {
+            display: inline-block;
+        }
+        .maker{
+            display: inline-block;
+        }
+        .alt{
+            position:fixed;
+            top: 120px;
+            left: 40%;
+        }
+        .home{
+            margin: 0 30%;
+            background-color: khaki;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div>
+            <h1>1. 만든이</h1>
+            <div class="figure1">
+            <figure>
+                <img src="" width="150px" height="200px">
+                <figcaption style="background-color:khaki">조영완 사진</figcaption>
+            </figure>
+            <p class="alt">사진은 <br>비공개입니다.</p>
+            </div>
+            <div class="maker">
+                <p>제작자: 조영완 </p> 
+                <p>동아리: 멋사 </p>
+                <p>이유 : 과제 </p><br>
+                
+            </div>
+        </div>    
+        <div>
+            <h1>사용법</h1>
+            <p>
+                1. 글자 수를 알고 싶은 내용을 적는다. <br>
+                2. "검사"버튼을 눌러 결과를 확인한다. <br>
+            </p>
+        </div>
+        <div>
+            <h1>결과</h1>
+            <p>
+                1. 입력한 내용 <br>
+                2. 글자 수 <br>
+                3. 내림차순 정리 <br><br> 
+            </p>
+        </div>
+    </div>
+    <p class="home">
+        돌아가고 싶다면? --->
+        <a href="{%url 'home'%}">HOME</a>
+    </p>
+</body>
